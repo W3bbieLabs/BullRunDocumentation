@@ -2,9 +2,9 @@
 
 # BullRun Documentation
 
-[Hack or Die Demo](http://w3bbie.xyz/hod), courtesy of [W3BBIE](https://twitter.com/w3bbie_xyz). Built for [ThirdWeb's Ready Player 3 hackathon](https://thirdweb.com/hackathon/readyplayer3).
+[BullRun](http://w3bbie.xyz/bullrun), courtesy of [W3BBIE](https://twitter.com/w3bbie_xyz). Built for [Theta NEtwork 2023 Hackathon]([https://thirdweb.com/hackathon/readyplayer3](https://theta2023.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Submissions+open)).
 
-_Welcome to the Hack or Die README. Here, you will find a guide to context, gameplay, design, and development._
+_Welcome to the BullRun README. Here, you will find a guide to context, gameplay, design, and development._
 
 ---
 
