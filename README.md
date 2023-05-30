@@ -2,148 +2,171 @@
 
 # 🐂 BullRun Documentation
 
-[BullRun](http://w3bbie.xyz/bullrun), courtesy of [W3BBIE](https://twitter.com/w3bbie_xyz). Built for [Theta NEtwork 2023 Hackathon]([https://thirdweb.com/hackathon/readyplayer3](https://theta2023.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Submissions+open)).
+[BullRun](http://w3bbie.xyz/bullrun), courtesy of [W3BBIE](https://twitter.com/w3bbie_xyz). Built for [Theta Network 2023 Hackathon](https://theta2023.devpost.com/).
 
-_Welcome to the BullRun README. Here, you will find a guide to context, gameplay, design, and development._
-
----
-
-## General Context
-
-In our multiplayer co-op game, players band together to fend off endless waves of enemies in a bid for survival. With each wave presenting a new challenge and a new opportunity to prove their mettle, our game will keep players on the edge of their seats as they fight to survive for as long as possible.
-
-### 💡 Why we Created BullRun
-
-We wanted to challenge ourselves to use tools we were not familiar with to build something fun people could play together.
-
-### 🤠 Bounties We are After!
-
-| Bounty Name          | Description                                                                                                                                                                                               | Eligibility                                                                                                                                                                                  |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| The Future of Gaming | Leverage thirdweb’s front-end, back-end, and blockchain SDKs and components (e.g. GamingKit, UI Kit, Gasless Relayers, React SDK, etc.) to create an innovative and user-friendly web3 gaming experience. | Leveraged thirdweb's ERC1155 (edition drop) contract for token-gated characters, utilized Contract kit, Gaming Kit (Unity SDK) & UI Kit                                                      |
-| Ship Your First Game | Best use of thirdweb’s UnitySDK in an innovative web3 gaming build or use of threeJS (or another browser based language) with thirdweb’s SDKs.                                                            | Utilized thirdweb's UnitySDK to build Hack Or Die. Used threeJS with thirdweb's UI components in the marketplace                                                                             |
-| HardMode             | Leverage both ContractKit and GamingKit in a browser-based web3 game build.                                                                                                                               | Used ContractKit for our in game NFTs. Utlizied GamingKit to provide web3 wallet intergration interacting with our deployed smart contracts so players can access character and reward NFTs. |
-| Under The Hood       | Leverage thirdweb and Coinbase infrastructure in a web3 gaming build to further highlight the GamingKit collaboration.                                                                                    | Wallet Connect button is built from thirdweb's UI components that allow users to connect to Coinbase Wallet.                                                                                 |
-
-### 👾 Reasons to play?
-
-- The initial up-front to play? Zero.
-- Massively multiplayer (bring your friends, or make new ones).
-- Web3 beginner friendly
-- W3BBIE built it.. duh.
+#### Development & Design Repositories 
+* [ Unity Source ](https://github.com/W3bbieLabs/bullrununity)
+* [ Marketplace ](https://github.com/W3bbieLabs/bullrun-marketplace)
+* [ UI ](https://github.com/W3bbieLabs/BullRunFrontEnd)
+* [ SoundPack ](https://github.com/W3bbieLabs/BullRunSoundPack)
+* [ Character ]()
 
 ---
 
-## 👘 Inside BullRun
+## Context
+BullRun is a massively multiplayer arcade-style runner game for mobile and desktop. Players race as bulls against the bears ( and other obstacles ). Winning the race earns BullTokens, which can be used to purchase character emotes. 
+
+---
+
+## Tracks We Are Submitting To
+
+| Track Name         | Description                                                         | How we approached                                                                 |  
+| ------------------ | ------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Video API          | Build decentralized video into application using Theta's Video API. | Used API in our marketplace for easter egg content.                               |
+| NFTs/ThetaPass     | Integrate ThetaPass in application.                                 | Create Emote NFTs applicable to character attributes, singnature finishing moves. |
+| Metaverse & Gaming | N / A                                                               | Build and deploy a multiplayer game.                                              |
+
+---
+
+## Features and Functionality
 
 ### ⚙️ Mechanics
 
 #### Gameplay Physics
 
-- Movement
-  - Standard left, right, up, down.
-  - Bound to keys, WASD.
-  - Can be used in conjunction with space bar, triggering a jump-move.
-- Auto-lock
-  - Player's weapon auto-locks onto the position of the nearest enemy.
-  - Player (when auto-locked) is rotated to nearest enemy during auto-lock.
-- Projectile Firing
-  - Firing happens via velocity, in direction of target.
-- Enemy Awareness
-  - Enemies are position-aware, locking onto the player's position, then navigating to that defined point.
-- Enemy Respawning
-  - Enemies respawn in waves, per duration (and targets eliminated).
-  - The number of enemies in a respawn is game-defined.
-- Jumping
-  - Spacebar vaults the character upwards.
-  - A double can be triggered with timely taps of the spacebar.
-
-### 🎨 Aesthetics
-
-#### Environment Design
-
-Hack or Die features an array of sectors within a level, each with its own unique aesthetic and gameplay relative purpose. The idea is to provide players the reason to explore.
-
-#### Character Design
-
-The first set of characters for Hack or Die were designed with the intention of being unique, familiar, and recognizable. Concepts for both BLK and BLU were created using Midjourney and hand modeled in virtual reality.
-
-#### Interface Design
-
-The interface was designed to be simple, well-organized, and verbose. The key challenge in designing the interace was arriving at a design system which could expand with the game. Also important?Having the interface feel like an element of the game, and not a "default" and / or "design afterthought."
-
-#### Sound Design
-
-The sounds of Hack or Die aim to round out gameplay on a macro and micro scale; Hack or Die's entirey was taken into account when the soundboard was created. Also, a theme of journey and exploration are relayed via Hack or Die's core soundtrack.
-
-### 🛠 Technology
-
-- Unity
-- Figma
-- NextJS
-- TailwindCSS
-- Thirdweb UI Components
-- Thirdweb React SDK
-- Three JS
-- Framer Motion
-- Midjourney
-- ChatGPT
-- Ableton
-- Gravity Sketch
+* Movement
+  - Left, Right
+      + WASD or arrow keys
+      + UI Joystick
+  - Jump
+      + Spacear
+      + UI "A" touchpad
+* Powerups
+  - Caffeine boost
+      + Triggers hyper-jump or speed boost ( if player is not jumping ).
 
 ---
 
-## 🚧 Development
+### Aesthetics
 
-### Areas Of Development
+* Environment
+    - Low-poly 3d farm with:
+        + Barns
+        + Lighhouse
+        + Tractors
+        + Crop patches
+        + Log Stacks
+        + Trees
+        + Scarecrows
+        + Empty bottles
 
-- Hack or Die Game Server
-- Gameplay Environment
-- Gameplay Physics
-- Wallet Connect
-- Smart Contracts
-- User Experience
-- ThirdWeb Character Assets
-- Off-chain Marketplace
+* Characters
+    - "The Bull" 
+        + Chibi inspired
+        + styled in Theta's branding for tie-in.
+    - Bears ( non-playable character )
+        + Animated to roam, high five, sleep, or fight.
 
-### 🏁 Milestones
+* Visual Styling
+    - Additional polish was achieved via:
+        + Bloom effects
+        + Color grading
+        + Grain
+        + Gradient treatments
 
-| Milestone Name                                                 | Date Reached   |
-| -------------------------------------------------------------- | -------------- |
-| Two players on seperate devices in an environment in browser.  | 2023 / 01 / 27 |
-| All 3d assets for game created (environment, characters, etc). | 2023 / 01 / 30 |
-| Built easter eggs into level one.                              | 2023 / 02 / 12 |
+* Sound Design
+    - Level Start
+        + Inspired by Larry Heard
+        + Engaging yet chill.
+    - Collision & Powerups
+        + Drum-and-bass inspired.
+        + High energy, connotes impact.
+    - Level Complete ( winner )
+        + Linked to Level Start sounds
+        + Carries a sense of energy and accomplishment.
+    - Walking
+        + SFX
+    - Bears growling
+        + SFX
 
-### 🐞 Known Bugs && Issues
+* Interface Design
+    
+---
 
-| Bug Name             | Description                                                | Date of Recognition | Severity (1-5) | Fixed        |
-| -------------------- | ---------------------------------------------------------- | ------------------- | -------------- | ------------ |
-| Respawn bug          | Enemies respawning outside of environment.                 | 2023 / 01 /30       | 3              | Yes.         |
-| Projectile Trigger   | Unable to shoot; player takes stance but never fires.      | 2023 / 02 / 13      | 5              | In Progress. |
-| Wallet Connect       | Guest-only forced even if wallet connected.                | 2023 / 02 / 13      | 5              | In Progress. |
-| Marketplace          | MetaMask skips login, asks to create/import account.       | 2023 / 02 / 13      | 3              | In Progress. |
-| Unlockable Character | "Blue" is claimable, yet error message displays otherwise. | 2023 / 02 / 13      | 2              | In Progress. |
+## Tech Stack
+* Unity
+* NextJS
+* Solidity
+* Vercel
+* TailwindCSS
+* Figma
+* Paint 3D
+* Midjourney
+* MPC Live
+* Natural Reader Text to Speech
+
+## Components and Ecosystem
+* Mirror Site
+* Marketplace
+* Leaderboard
+* Wallet Connect
+* Emotes ( ERC 1150 )
+* BullToken ( TNT 20 )
+
+---
+
+## Milestones
+
+| Milestone Name                                                 | Date of Milestone   |
+| -------------------------------------------------------------- | ------------------- |
+| Decide on prototype build.                                     | 2023 04 16          |
+| Set up GitHub repo.                                            | 2023 04 16          |
+| Begin character concepting.                                    | 2023 04 16          |
+| Setup base ERC 1155 & TNT 20                                   | 2023 04 23          |
+| Present design system exploration                              | 2023 04 23          |
+| Wireframe UI for Marketplace                                   | 2023 04 30          |
+| Wireframe UI for Leaderboard                                   | 2023 04 30          |
+| Wireframe UI for Gameplay                                      | 2023 04 30          |
+| Server test                                                    | 2023 04 30          |
+| Primary character designed                                     | 2023 04 30          |
+| Make UI Kit available to dev team                              | 2023 05 07          |
+| Wallet Connect test                                            | 2023 05 07          |
+| Game Loop Test                                                 | 2023 05 07          |
+| Sound Pack and SFX to environment                              | 2023 05 14          |
+| HTTP, beta test #1                                             | 2023 05 14          |
+| HTTPS beta test #2                                             | 2023 05 21          |
+| Server stress test, 5 players                                  | 2023 05 21          |
+| Create Emotes                                                  | 2023 05 21          |
+| Marketplace Live                                               | 2023 05 21          |
+| Leaderboard live                                               | 2023 05 24          |
+| Environment Polishing                                          | 2023 05 24          |
+| Beta Test #3                                                   | 2023 05 24          |
+| Complete DevPost submission                                    | 2023 05 31          |
+| Complete repo documentation                                    | 2023 05 31          |
+| Beta Test #4                                                   | 2023 05 31          |
+
+---
+## Known Bugs and Issues
+
+| Bug Name             | Description                                                |  Severity (1-5) | Resolved                |
+| -------------------- | ---------------------------------------------------------- | --------------- | ------------------------ |
+| WASM                 | Affects gameplay                                           | 5               | Yes.                     |
+| IPFS                 | Affects marketplace whne viewing emote videos.             | 2               | In Progress.             |
+| Theta Video API      | Theta Video API outage.                                    | 3               | Yes ( Thank you Theta! ) |
+| Theta Testnet        | Theta testnet temporary outage                             | 5               | Yes ( Thank you Theta! ) |
+| Countdown glitch     | Countdown not starting from expected value.                | 1               | Yes.                     |
+| Countdown glitch     | Countdown not starting from expected value.                | 1               | Yes.                     |
+| Reject lag           | Gameplay lag if transaction rejected in wallet             | 3               | Yes.
 
 _Note: Submit future bugs via Issues. This is only a temporary bug tracker._
 
 ---
 
-## 👽 Future Plans for Hack or Die
-
-- Build environmental-based hacks into level one.
-- Build time-based hacks into level one.
-- Build time-based multipliers into level one.
-- Build server-based multipliers into level one.
-- Establish leaderboard system.
-- Complete the interface from design system prototype (HUDs, pause/play states).
-- Enable adjustable physics to influence and create play styles.
-- Refine gameplay loop
-- Add more playable characters and weapons
-- Intergrate social features (text and voice chat)
+## Future Plans for BullRun
 
 ---
 
-## 🦾 Team W3BBIE
+## Team W3BBIE
 
 | Name                                                                         | Role(s)                                  |
 | ---------------------------------------------------------------------------- | ---------------------------------------- |
