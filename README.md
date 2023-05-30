@@ -1,6 +1,6 @@
 `Date last modified: 2023 05 29`
 
-# BullRun Documentation
+# 🐂 BullRun Documentation
 
 [BullRun](http://w3bbie.xyz/bullrun), courtesy of [W3BBIE](https://twitter.com/w3bbie_xyz). Built for [Theta NEtwork 2023 Hackathon]([https://thirdweb.com/hackathon/readyplayer3](https://theta2023.devpost.com/?ref_feature=challenge&ref_medium=your-open-hackathons&ref_content=Submissions+open)).
 
@@ -12,7 +12,7 @@ _Welcome to the BullRun README. Here, you will find a guide to context, gameplay
 
 In our multiplayer co-op game, players band together to fend off endless waves of enemies in a bid for survival. With each wave presenting a new challenge and a new opportunity to prove their mettle, our game will keep players on the edge of their seats as they fight to survive for as long as possible.
 
-### 💡 Why we Created Hack or Die
+### 💡 Why we Created BullRun
 
 We wanted to challenge ourselves to use tools we were not familiar with to build something fun people could play together.
 
@@ -34,7 +34,7 @@ We wanted to challenge ourselves to use tools we were not familiar with to build
 
 ---
 
-## 👘 Inside Hack or Die
+## 👘 Inside BullRun
 
 ### ⚙️ Mechanics
 
@@ -114,7 +114,7 @@ The sounds of Hack or Die aim to round out gameplay on a macro and micro scale; 
 | All 3d assets for game created (environment, characters, etc). | 2023 / 01 / 30 |
 | Built easter eggs into level one.                              | 2023 / 02 / 12 |
 
-### 🐞 Known Bugs
+### 🐞 Known Bugs && Issues
 
 | Bug Name             | Description                                                | Date of Recognition | Severity (1-5) | Fixed        |
 | -------------------- | ---------------------------------------------------------- | ------------------- | -------------- | ------------ |
