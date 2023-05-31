@@ -36,7 +36,7 @@ BullRun is a massively multiplayer arcade-style runner game for mobile and deskt
 
 * Movement
   - Left, Right
-      + WASD or arrow keys
+      + W, A, S, D keys
       + UI Joystick
   - Jump
       + Spacear
