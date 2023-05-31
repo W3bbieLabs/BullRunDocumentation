@@ -1,4 +1,4 @@
-`Date last modified: 2023 05 29`
+`Date last modified: 2023 05 31`
 
 # 🐂 BullRun Documentation
 
@@ -97,6 +97,7 @@ BullRun is a massively multiplayer arcade-style runner game for mobile and deskt
 * Unity
 * NextJS
 * Solidity
+* AWS EC2
 * Vercel
 * TailwindCSS
 * Figma
@@ -140,6 +141,7 @@ BullRun is a massively multiplayer arcade-style runner game for mobile and deskt
 | Marketplace Live                                               | 2023 05 21          |
 | Leaderboard live                                               | 2023 05 24          |
 | Environment Polishing                                          | 2023 05 24          |
+| Transact w/ Emotes                                             | 2023 05 24          |
 | Beta Test #3                                                   | 2023 05 24          |
 | Complete DevPost submission                                    | 2023 05 31          |
 | Complete repo documentation                                    | 2023 05 31          |
@@ -159,10 +161,6 @@ BullRun is a massively multiplayer arcade-style runner game for mobile and deskt
 | Reject lag           | Gameplay lag if transaction rejected in wallet             | 3               | Yes.
 
 _Note: Submit future bugs via Issues. This is only a temporary bug tracker._
-
----
-
-## Future Plans for BullRun
 
 ---
 
